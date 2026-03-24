@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import Loader from './Loader';
 import { useNavigate } from 'react-router-dom';
+import Mycarousel from './Mycarousel';
 
 const Getproducts = () => {
 
@@ -53,9 +54,13 @@ const Getproducts = () => {
 
   return (
     <div className='row'>
-      <h2 className="text-primary">Available Delicacies And Treats</h2>
+
+        <Mycarousel />
 
         {loading && <Loader/>}
+         <h2 className='text-secondary fs-7 fst-italic'>
+       Available Delicacies and treats
+      </h2>
         <h4 className="text-danger"> {error} </h4>
 
         {/* map the products fetched from the API to the user interface */}
@@ -80,7 +85,6 @@ const Getproducts = () => {
             </div>
         </div>
         )  )}
-      
     </div>
   )
 }

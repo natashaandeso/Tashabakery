@@ -64,9 +64,14 @@ const Signin = () => {
 
   return (
     // <!-- From Uiverse.io by mahbowal --> 
-<div class="container justify-content-center col-md-6">
+<div className="container justify-content-center col-md-6 mybg">
   <div class="heading">Sign In</div>
-  <form class="form" action="">
+
+      <h5 className="text-warning">{loading}</h5>
+      <h3 className="text-success">{success}</h3>
+      <h4 className="text-danger">{error}</h4>
+      
+  <form class="form" onSubmit={handlesubmit}>
     <input
       placeholder="E-mail"
       id="email"
@@ -83,17 +88,19 @@ const Signin = () => {
       class="input"
       required
     />
-    <span class="forgot-password"><a href="#">Forgot Password ?</a></span>
+    <span class="forgot-password"><a href="#">Forgot Password ?</a></span> <br />
+    
     <input value="Sign In" type="submit" class="login-button" />
   </form>
  
-    Don't  have an account? <Link to='/signup'>Signin</Link>
+    Don't  have an account? <Link to='/signup'>Signup</Link>
 
   <span class="agreement"><a href="#">Learn user licence agreement</a></span>
 </div>
 
   )
 }
+
 
 export default Signin;
 

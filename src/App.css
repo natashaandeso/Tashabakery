@@ -180,6 +180,145 @@
 
 .agreement a {
   text-decoration: none;
-  color: #0099ff;
+  color: #d9e368;
   font-size: 9px;
+}
+/* Navbar container */
+.navbar-custom {
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+  background-color: #d9e368;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Links */
+.nav-link-custom {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 8px 15px;
+  transition: color 0.3s ease;
+  background-color: plum;
+}
+
+/* Animated background effect */
+.nav-link-custom::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 100%;
+  background-color: white;
+  z-index: -1;
+  transition: width 0.3s ease;
+  border-radius: 5px;
+}
+
+/* Hover effect */
+.nav-link-custom:hover::before {
+  width: 100%;
+}
+
+/* Text color change on hover */
+.nav-link-custom:hover {
+  color: #415208;
+}
+/* Image styling */
+.carousel-img {
+  height: 500px;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+/* Caption styling */
+.custom-caption {
+  bottom: 20%;
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.custom-caption h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.custom-caption p {
+  font-size: 18px;
+  color: #f8f9fa;
+}
+
+/* Smooth animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.product_img{
+  object-fit: contain;
+  width: 100%;
+  height: 200px;
+}
+/* Footer background */
+.footer-container {
+  background: linear-gradient(to right, #8f949c, #8f949c);
+  color: rgb(47, 45, 45);
+  padding: 40px 0;
+}
+
+/* Headings */
+.footer-container h4 {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Text */
+.footer-container p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Form inputs */
+.footer-container input,
+.footer-container textarea {
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
+}
+
+/* Button */
+.footer-container button {
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.footer-container button:hover {
+  background-color: #ffc107;
+  color: black;
+}
+
+.social-icons a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #ffc107;
+}
+.brand-text {
+  font-family: 'Pacifico', cursive;
+  font-size: 34px;
+  color: #ff6b6b;
+}
+.mybg{
+  background-color: rgb(100, 90, 90);
 }

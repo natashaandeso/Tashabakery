@@ -72,18 +72,18 @@ const Addproducts = () => {
 
 
   return (
-    <div className='row justify-content-center mt-4'>
-      <div className="col-md-6 p-4 card shadow">
-        <h3 className='text-info'>Welcome to Add treates and cakes</h3>
+    <div class="container justify-content-center col-md-6">
+  <div class="heading">Add Your Treat Or Delicacy</div>
 
         {/* bind the loading hook */}
         {loading && <Loader />}
-        <h3 className="text-success">{success}</h3>
-        <h4 className="text-danger">{error}</h4>
+      <h3 className="text-success">{success}</h3>
+      <h4 className="text-danger">{error}</h4>
+      
+ <form class="form" onSubmit={handleSubmit}>
 
-        <form onSubmit={handleSubmit}>
-          <input type="text"
-          placeholder='Enter the treate or cake name'
+     <input type="text"
+          placeholder='Enter the product name'
           className='form-control' 
           required
           value={product_name}
@@ -92,7 +92,7 @@ const Addproducts = () => {
           {/* {product_name} */}
 
           <input type="text" 
-          placeholder='Enter the delicacy Description'
+          placeholder='Enter the product Description'
           className='form-control'
           required
           value={product_description}
@@ -109,7 +109,7 @@ const Addproducts = () => {
 
           {/* {product_cost} */}
 
-          <label className='text-primary'>Delicacy Photo</label>
+          <label className='text-primary'>Product Photo</label>
           <input type="file" 
           className='form-control'
           required
@@ -118,13 +118,11 @@ const Addproducts = () => {
           onChange={(e) => setProductPhoto(e.target.files[0])}/>
           <br />
 
-          <input type="submit"
-          value="Add your Delicacy"
-          className='btn btn-outline-primary' />
-        </form>
-
-      </div>
-    </div>
+    
+    <input value="Add Product" type="submit" class="login-button" />
+  </form>
+ 
+</div>
   )
 }
 

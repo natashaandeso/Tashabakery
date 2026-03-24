@@ -62,61 +62,64 @@ const Signup = () => {
   }
 
   return (
-    <div className='row justify-content-center mt-4'>
-        <div className="card col-md-6 shadow p-4">
-          <h1 className='text-primary'>Sign Up</h1>
-          
-          <h5 className="text-warning">{loading}</h5>
-          <h3 className="text-success">{success}</h3>
-          <h4 className="text-danger">{error}</h4>
+    // <!-- From Uiverse.io by mi-series --> 
+<div class="container justify-content-center col-md-6 signup">
+  <div class="heading">Sign In</div>
 
-          <form onSubmit={handleSubmit}>
+      <h5 className="text-warning">{loading}</h5>
+      <h3 className="text-success">{success}</h3>
+      <h4 className="text-danger">{error}</h4>
+      
+  <form class="form" onSubmit={handleSubmit}>
 
-            <input type="text"
-            placeholder='Enter the username'
-            className='form-control'
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            required /> <br />
+     <input type="text"
+       placeholder='Enter the username'
+      className='form-control'
+      value={username}
+      onChange={(e) => setUsername(e.target.value)}
+      required /> <br />
 
-            {/* {username} */}
+      {/* {username} */}
+    <input
+      placeholder="E-mail"
+      id="email"
+      name="email"
+      type="email"
+      class="input"
+      required
+    /> <br /> 
 
-            <input type="email"
-            placeholder='Enter the email address'
-            className='form-control' 
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required/> <br />
+    <input
+      placeholder="Password"
+      id="password"
+      name="password"
+      type="password"
+      class="input"
+      required
+    /> <br /> <br />
 
-            {/* {email} */}
+    <input type="number"
+     placeholder='Enter the mobile phone number'
+     className='form-control'
+    value={phone}
+     onChange={(e) => setPhone(e.target.value)}
+    required /> <br />
 
-            <input type="password"
-            placeholder='Enter the password'
-            className='form-control' 
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required/> <br />
+    {/* {phone} */}
 
-            {/* {password} */}
+    <span class="forgot-password"><a href="#">Forgot Password ?</a></span> <br />
+    
+    <input value="Sign In" type="submit" class="login-button" />
+  </form>
+ 
+    Already  have an account? <Link to='/signin'>Signin</Link>
 
-            <input type="number"
-            placeholder='Enter the mobile phone number'
-            className='form-control'
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-            required /> <br />
-
-            {/* {phone} */}
-
-            <input type="submit" value="Signup" className='btn btn-primary' />
-            <br /> <br />
-
-            Already have an account? <Link to='/signin'>Signin</Link>
-          </form>
-        </div>
-    </div>
+  <span class="agreement"><a>Learn user licence agreement</a></span>
+</div>
   )
+  
 }
+
 
 export default Signup;
 
