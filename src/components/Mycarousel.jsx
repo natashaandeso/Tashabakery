@@ -5,7 +5,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
 const Mycarousel = () => {
   return (
-    <div className="container mt-4 col-md-8">
+    <div className="container mt-4 col-md-10">
       <div className="row">
         <div className="col-md-10 mx-auto">
             <div id="carouselExample" className="carousel slide" data-bs-ride="carousel">
@@ -22,7 +22,7 @@ const Mycarousel = () => {
 
           <div className="carousel-item active">
             <img
-              src="images/"
+              src="images/croissan.jfif"
               className="d-block w-100"
               alt="First slide"
               height="450px"
@@ -35,7 +35,7 @@ const Mycarousel = () => {
 
           <div className="carousel-item">
             <img
-              src="images/yoghurt3.jpg"
+              src="images/cupcake.jfif"
               className="d-block w-100"
               alt="Second slide"
               height="450px"
@@ -48,7 +48,7 @@ const Mycarousel = () => {
 
           <div className="carousel-item">
             <img
-              src="images/youghurt2.jpg"
+              src="images/cake.jfif"
               className="d-block w-100"
               alt="Third slide"
               height="450px"

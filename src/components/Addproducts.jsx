@@ -72,7 +72,7 @@ const Addproducts = () => {
 
 
   return (
-    <div class="container justify-content-center col-md-6">
+    <div class="container justify-content-center col-md-6 signin">
   <div class="heading">Add Your Treat Or Delicacy</div>
 
         {/* bind the loading hook */}

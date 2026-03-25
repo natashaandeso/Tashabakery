@@ -63,7 +63,7 @@ const Signup = () => {
 
   return (
     // <!-- From Uiverse.io by mi-series --> 
-<div class="container justify-content-center col-md-6 signup">
+<div class="container justify-content-center col-md-6 signin">
   <div class="heading">Sign In</div>
 
       <h5 className="text-warning">{loading}</h5>

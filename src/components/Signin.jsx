@@ -64,7 +64,7 @@ const Signin = () => {
 
   return (
     // <!-- From Uiverse.io by mahbowal --> 
-<div className="container justify-content-center col-md-6 mybg">
+<div className="container justify-content-center col-md-6 signin">
   <div class="heading">Sign In</div>
 
       <h5 className="text-warning">{loading}</h5>
