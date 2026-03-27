@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <header>
       </header>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-sm px-4">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-sm px-4 fixed-top">
       
       {/* Bakery Name (Left Side) */}
       <a className="navbar-brand fw-bold text-primary brand-text" href="/">

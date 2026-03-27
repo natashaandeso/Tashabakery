@@ -64,8 +64,9 @@ const Signin = () => {
 
   return (
     // <!-- From Uiverse.io by mahbowal --> 
-<div className="container justify-content-center col-md-6 signin">
-  <div class="heading">Sign In</div>
+    <div className='signin'>
+<div className="container justify-content-center col-md-6">
+  <div class="heading ">Sign In</div>
 
       <h5 className="text-warning">{loading}</h5>
       <h3 className="text-success">{success}</h3>
@@ -97,7 +98,7 @@ const Signin = () => {
 
   <span class="agreement"><a href="#">Learn user licence agreement</a></span>
 </div>
-
+</div>
   )
 }
 

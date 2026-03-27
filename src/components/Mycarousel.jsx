@@ -28,8 +28,8 @@ const Mycarousel = () => {
               height="450px"
             />
             <div className="carousel-caption d-none d-md-block bg-dark opacity-50">
-              <h5>First Slide</h5>
-              <p>This is the first slide caption.</p>
+              <h5>croisan</h5>
+              <p>irresistible sweet pastries.</p>
             </div>
           </div>
 

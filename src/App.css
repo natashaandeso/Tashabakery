@@ -188,7 +188,7 @@
   display: flex;
   justify-content: right;
   gap: 20px;
-  background-color: #d9e368;
+  background-color: #cada14;
   padding: 15px;
   border-radius: 8px;
 }
@@ -197,11 +197,11 @@
 .nav-link-custom {
   position: relative;
   text-decoration: none;
-  color: white;
+  color: rgb(126, 83, 125);
   font-weight: 500;
   padding: 8px 15px;
   transition: color 0.3s ease;
-  background-color: plum;
+  background-color: rgba(192, 22, 192, 0.793);
 }
 
 /* Animated background effect */
@@ -212,7 +212,7 @@
   bottom: 0;
   width: 0%;
   height: 100%;
-  background-color: white;
+  background-color: rgba(154, 64, 121, 0.345);
   z-index: -1;
   transition: width 0.3s ease;
   border-radius: 5px;
@@ -268,54 +268,133 @@
   width: 100%;
   height: 200px;
 }
-/* Footer background */
+/* Footer Container */
 .footer-container {
-  background: linear-gradient(to right, #8f949c, #8f949c);
-  color: rgb(47, 45, 45);
-  padding: 40px 0;
+  background: #a426837a;
+  color: #e06e9f;
+  padding: 50px 0 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Headings */
 .footer-container h4 {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-weight: bold;
+  color: #c78d0ee2;
 }
 
-/* Text */
+/* Paragraph text */
 .footer-container p {
   font-size: 14px;
   line-height: 1.6;
+  color: #57bbdf;
 }
 
 /* Form inputs */
-.footer-container input,
-.footer-container textarea {
+.footer-container .form-control {
   border-radius: 8px;
   border: none;
   padding: 10px;
 }
 
+.footer-container .form-control:focus {
+  box-shadow: none;
+  border: 1px solid #f8b400;
+}
+
 /* Button */
-.footer-container button {
+.footer-container .btn-primary {
+  background: #f8b400;
+  border: none;
   border-radius: 8px;
+  font-weight: bold;
   transition: 0.3s;
 }
 
-.footer-container button:hover {
-  background-color: #ffc107;
-  color: black;
+.footer-container .btn-primary:hover {
+  background: #ffcc33;
+  transform: scale(1.05);
 }
 
+/* Social Icons Container */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+/* ICON STYLE (for Bootstrap icons) */
 .social-icons a {
-  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background: #222;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  transition: 0.3s ease;
   text-decoration: none;
 }
 
+/* Hover Effects */
 .social-icons a:hover {
-  color: #ffc107;
+  transform: translateY(-5px);
+  background: #f8b400;
+  color: #000;
 }
-.brand-text {
-  font-family: 'Pacifico', cursive;
-  font-size: 34px;
-  color: #ff6b6b;
+
+/* Optional: Different hover colors per platform */
+.social-icons a:nth-child(1):hover {
+  background: #1877f2; /* Facebook */
+  color: #fff;
+}
+
+.social-icons a:nth-child(2):hover {
+  background: #e4405f; /* Instagram */
+  color: #fff;
+}
+
+.social-icons a:nth-child(3):hover {
+  background: #1da1f2; /* Twitter/X */
+  color: #fff;
+}
+
+.social-icons a:nth-child(4):hover {
+  background: #25d366; /* WhatsApp */
+  color: #fff;
+}
+
+/* Divider */
+.footer-container hr {
+  border-top: 1px solid #444;
+  margin: 30px 0;
+}
+
+/* Bottom text */
+.footer-container .text-center {
+  font-size: 13px;
+  color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+.signin{
+  background-image: url("../public/images/bgimage.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.myvideo {
+  background: transparent;
+  object-fit: cover; /* makes it fill nicely */
 }

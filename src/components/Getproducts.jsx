@@ -53,9 +53,29 @@ const Getproducts = () => {
 
 
   return (
-    <div className='row'>
+    
 
-        <Mycarousel />
+    
+    <div className='row'>
+      <section className="row">
+
+        <div className="col-md-6">
+          <Mycarousel />
+        </div>
+
+        <div className="col-md-6 container mt-4">
+  <video 
+    src="images/videos.mp4" 
+    width="100%" 
+    height="400px" 
+    className="myvideo"
+    controls
+    autoPlay
+    muted
+    loop
+  />
+</div>
+</section>
 
         {loading && <Loader/>}
          <h2 className='text-secondary fs-7 fst-italic'>
@@ -81,11 +101,17 @@ const Getproducts = () => {
                 <h4 className="text-warning">Kes {product.product_cost} </h4>
 
                 <button className="btn btn-outline-info" onClick={() => navigate("/makepayment", {state : {product}})}>Purchase Now</button>
+
+                
               </div>
+              
             </div>
+            
         </div>
         )  )}
     </div>
+    
+    
   )
 }
 

@@ -73,7 +73,7 @@ const Addproducts = () => {
 
   return (
     <div class="container justify-content-center col-md-6 signin">
-  <div class="heading">Add Your Treat Or Delicacy</div>
+  <div class="heading">Add Your Treat Or Delicacy 🍰</div>
 
         {/* bind the loading hook */}
         {loading && <Loader />}
@@ -83,7 +83,7 @@ const Addproducts = () => {
  <form class="form" onSubmit={handleSubmit}>
 
      <input type="text"
-          placeholder='Enter the product name'
+          placeholder='Enter the product name 🍰'
           className='form-control' 
           required
           value={product_name}
